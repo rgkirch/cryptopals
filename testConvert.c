@@ -4,6 +4,17 @@
 
 extern char* convertFromHex(char* hex, int length);
 
+int equals(char* a, char* b, int len)
+{
+    for(int i = 0; i < len; i++)
+    {
+        if(a[i] != b[i])
+        {
+            return 0;
+        }
+    }
+    return 1;
+}
 
 void simpleTest()
 {
@@ -17,24 +28,31 @@ void allTest()
     int num = 256;
 //    char* buffer = (char*)malloc(256);
 //    char* hexInput = (char*)malloc(256 * 2);
-    char* buffer[num];
-    char* hexInput[num*2];
-    char* hexOutput;
+    char buffer[num + 1]; // fill it with binary shit
+    char hexInput[num*2]; // the hex thet represents the binary shit
+    char* hexOutput; // go back to the binary shit
     for(int i = 0; i < num; i++)
     {
         buffer[i] = i;
     }
-//    snprintf(hexInput, num, "%x", buffer);
     for (int i = 0; i < num; i++)
     {
-        char t[2];
-        snprintf(t, 2, "%x", buffer[i]);
-        hexInput[i] = t[0];
-        hexInput[i+1] = t[1];
+        char t[3];
+        int len = snprintf(NULL, 0, "%x", buffer[i]);
+        snprintf(t, 3, "%x", buffer[i]);
+        if (len == 1)
+        {
+            hexInput[i*2] = 0x30;
+            hexInput[i*2+1] = t[0];
+        } else {
+            hexInput[i*2] = t[0];
+            hexInput[i*2+1] = t[1];
+        }
     }
-//    printf("%s\n", hexInput);
+    printf("%s\n", hexInput);
     hexOutput = convertFromHex(hexInput, 256);
-//    assert(equals(hexOutput, hexInput, 256));
+    assert(equals(hexOutput, hexInput, 256));
+    free(hexOutput);
 }
 
 void longTest()
