@@ -55,3 +55,7 @@ docs/_build/
 
 # PyBuilder
 target/
+*.o
+cmake-build-debug
+a.out
+.idea
