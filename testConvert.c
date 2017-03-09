@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <assert.h>
 
-convertFromHex(unsigned char* out, unsigned char* hex, int length);
+convertFromHex(unsigned char* binary, unsigned char* hex, int lengthOfBinary);
 
 int equals(unsigned char* a, unsigned char* b, int len)
 {
@@ -18,54 +18,43 @@ int equals(unsigned char* a, unsigned char* b, int len)
 
 void simpleTest()
 {
-    unsigned char hex[] = {"41"};
-    unsigned char bytes[sizeof(hex)];
-    convertFromHex(bytes, hex, 2);
-    assert(bytes[0] == 'A');
+    unsigned char hex[] = {'4','1'};
+    unsigned char byte;
+    convertFromHex(&byte, hex, 1);
+    assert(byte == 'A');
 }
 void allTest()
 {
     int num = 256;
-//    unsigned char* buffer = (unsigned char*)malloc(256);
-//    unsigned char* hexInput = (unsigned char*)malloc(256 * 2);
-    unsigned char buffer[num]; // fill it with binary shit
-    unsigned char hexInput[num*2]; // the hex thet represents the binary shit
+//    unsigned char* binary = (unsigned char*)malloc(256);
+//    unsigned char* hex = (unsigned char*)malloc(256 * 2);
+    unsigned char binary[num]; // fill it with binary shit
+    unsigned char hex[num*2]; // the hex thet represents the binary shit
     unsigned char result[num]; // go back to the binary shit
     for(int i = 0; i < num; i++)
     {
-        buffer[i] = i;
+        binary[i] = i;
     }
     for (int i = 0; i < num; i++)
     {
         unsigned char t[3];
-        int len = snprintf(NULL, 0, "%x", buffer[i]);
-        snprintf(t, 3, "%x", buffer[i]);
-        if (len == 1)
-        {
-            hexInput[i*2] = 0x30;
-            hexInput[i*2+1] = t[0];
-        } else {
-            hexInput[i*2] = t[0];
-            hexInput[i*2+1] = t[1];
-        }
+        snprintf(t, 3, "%02x", binary[i]);
+        hex[i*2] = t[0];
+        hex[i*2+1] = t[1];
     }
-    convertFromHex(result, hexInput, 256);
-
-    assert(equals(result, buffer, 256));
+    convertFromHex(result, hex, 256);
+    assert(equals(result, binary, 256));
 }
 
 void longTest()
 {
-    unsigned char hex[] = {"49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d"};
-    unsigned char bytes[sizeof(hex) / 2];
-    convertFromHex(bytes, hex, sizeof(bytes));
-    for(int i = 0; i < sizeof(bytes); ++i)
-    {
-        printf("%c", bytes[i]);
-    }
-    printf("\n");
-//    unsigned char answer[] = {};
-//    assert(equals(hex, answer, sizeof(hex)));
+    const int length = 48;
+    unsigned char hex[] = {'4','9','2','7','6','d','2','0','6','b','6','9','6','c','6','c','6','9','6','e','6','7','2','0','7','9','6','f','7','5','7','2','2','0','6','2','7','2','6','1','6','9','6','e','2','0','6','c','6','9','6','b','6','5','2','0','6','1','2','0','7','0','6','f','6','9','7','3','6','f','6','e','6','f','7','5','7','3','2','0','6','d','7','5','7','3','6','8','7','2','6','f','6','f','6','d'};
+    unsigned char bytes[length];
+    assert(sizeof(hex) == (2 * length));
+    convertFromHex(bytes, hex, length);
+    assert(equals("I'm killing your brain like a poisonous mushroom", bytes, length));
+//    fwrite(bytes, 1, length, stdout);
 }
 
 typedef void(*test)();
@@ -77,6 +66,4 @@ int main()
     {
         tests[i]();
     }
-//    allTest();
-//    assert(4 << 4 | 1 == 'A');
 }
