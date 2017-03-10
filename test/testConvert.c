@@ -56,14 +56,3 @@ void longTest()
     assert(equals("I'm killing your brain like a poisonous mushroom", bytes, length));
 //    fwrite(bytes, 1, length, stdout);
 }
-
-typedef void(*test)();
-test tests[] = {simpleTest, longTest, allTest};
-
-int main()
-{
-    for(int i = 0; i < sizeof(tests) / sizeof(test); i++)
-    {
-        tests[i]();
-    }
-}
