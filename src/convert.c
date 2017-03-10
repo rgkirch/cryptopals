@@ -1,7 +1,5 @@
-#include <stdlib.h>
-#include <stdio.h>
-
-int indexOf(unsigned char c, unsigned char* cs, int length);
+#include <stddef.h>
+#include "cryptoUtils.h"
 
 //convert hex to base 64
 void convertFromHex(unsigned char* b, unsigned char* hex, int length)
@@ -23,8 +21,6 @@ int indexOf(unsigned char c, unsigned char* cs, int length)
     if(cs == NULL) { return -1; }
     unsigned char* ptr = cs;
     unsigned char* end = cs + length;
-//    printf("%p\n", cs);
-//    printf("%p\n", end);
     while(ptr != end)
     {
         if(*ptr == c) return ptr - cs;

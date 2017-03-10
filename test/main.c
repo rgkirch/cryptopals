@@ -1,8 +1,6 @@
-typedef void(*test)();
+#include "testUtils.h"
 
-extern void simpleTest();
-extern void longTest();
-extern void allTest();
+typedef void(*test)();
 
 test tests[] = {simpleTest, longTest, allTest};
 

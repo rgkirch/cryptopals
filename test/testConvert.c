@@ -1,20 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <assert.h>
-
-convertFromHex(unsigned char* binary, unsigned char* hex, int lengthOfBinary);
-
-int equals(unsigned char* a, unsigned char* b, int len)
-{
-    for(int i = 0; i < len; i++)
-    {
-        if(a[i] != b[i])
-        {
-            return 0;
-        }
-    }
-    return 1;
-}
+#include "cryptoUtils.h"
+#include "testUtils.h"
 
 void simpleTest()
 {
@@ -45,7 +33,6 @@ void allTest()
     convertFromHex(result, hex, 256);
     assert(equals(result, binary, 256));
 }
-
 void longTest()
 {
     const int length = 48;
