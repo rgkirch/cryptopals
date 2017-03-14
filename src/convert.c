@@ -2,16 +2,44 @@
 #include "cryptoUtils.h"
 
 //convert hex to base 64
-void convertFromHex(unsigned char* b, unsigned char* hex, int length)
+void readBase(unsigned char *w, unsigned char *r, int length, int base)
 {
-    int i = 0;
-    unsigned char c[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
-    while(i < length)
+    if(base == 16 && length % 2 == 0)
     {
-        unsigned char high = indexOf(hex[i*2], c, sizeof(c) / sizeof(unsigned char));
-        unsigned char low = indexOf(hex[i*2+1], c, sizeof(c) / sizeof(unsigned char));
-        b[i] = (high << 4) | low;
-        i++;
+        int i = 0;
+        unsigned char c[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
+        while(i < length)
+        {
+            unsigned char high = indexOf(r[i*2], c, sizeof(c) / sizeof(unsigned char));
+            unsigned char low = indexOf(r[i*2+1], c, sizeof(c) / sizeof(unsigned char));
+            w[i] = (high << 4) | low;
+            i++;
+        }
+    }
+}
+
+void writeBase(unsigned char *w, unsigned char *r, int length, int base)
+{ // 6 bits can represent 64 values
+    unsigned char cs[] = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','0','1','2','3','4','5','6','7','8','9','0','/','+'};
+    int wi = 0;
+    int ri = 0;
+    if(base == 64 && r != NULL && w != NULL)
+    {
+        for(int i = 0; i < length / 3; i++)
+        {
+            w[i] = r[i] >> 2;
+            w[i+1] = r[i] >> 6 << 4 | r[i+1] >> 4;
+            if (ri + 1 < length)
+            {
+                n |= indexOf(r[ri+1], cs, sizeof(cs)) << 12;
+            }
+            if (ri + 2 < length)
+            {
+                n |= indexOf(r[ri+2], cs, sizeof(cs));
+            }
+            if (r[ri+1] == '=')
+            n |= indexOf(r[ri], cs, sizeof(cs)) << 12;
+        }
     }
 }
 
