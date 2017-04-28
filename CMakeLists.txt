@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.6)
 
 project(cryptopals)
+set(cryptopals_version_major 0)
+set(cryptopals_version_minor 1)
 
 set(CMAKE_VERBOSE_MAKEFILE on )
 set(GTEST_ROOT lib/googletest/googletest)
@@ -17,8 +19,4 @@ add_subdirectory(test)
 add_subdirectory(src)
 add_subdirectory(lib/googletest)
 
-add_executable(cryptopals test/cryptoTest.cpp)
-target_link_libraries(cryptopals convert gtest gtest_main)
-add_test(cryptopals test/cryptoTest.cpp)
-#target_link_libraries(cryptoTest gtest gtest_main)
-#add_executable(benchmarkProj test/benchmarkConvert.c src/convert.c)
+#add_test(baseTest base)

@@ -8,4 +8,8 @@ project(cryptoTest)
 include_directories(${GTEST_ROOT})
 include_directories(${GTEST_ROOT}/include)
 
-add_executable(cryptoTest cryptoTest.cpp)
+add_executable(baseTest baseTest.cpp)
+target_link_libraries(baseTest base gtest gtest_main)
+
+#add_executable(baseTest baseTest.cpp)
+#add_library(baseTest baseTest.cpp)

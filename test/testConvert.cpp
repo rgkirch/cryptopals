@@ -1,16 +1,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <assert.h>
-#include "cryptoUtils.h"
-#include "testUtils.h"
-#include "googletest/gtest.h"
+#include "gtest/gtest.h"
 
-void simpleTest()
-{
+TEST(simple_test, something) {
     unsigned char hex[] = {'4','1'};
     unsigned char byte;
     readBase(&byte, hex, 1, 16);
-    assert(byte == 'A');
+    ASSERT_EQ(byte, 'A');
 }
 void allTest()
 {
@@ -27,7 +24,7 @@ void allTest()
     for (int i = 0; i < num; i++)
     {
         unsigned char t[3];
-        snprintf(t, 3, "%02x", binary[i]);
+        snprintf((char *)t, 3, "%02x", binary[i]);
         hex[i*2] = t[0];
         hex[i*2+1] = t[1];
     }
@@ -41,6 +38,6 @@ void longTest()
     unsigned char bytes[length];
     assert(sizeof(hex) == (2 * length));
     readBase(bytes, hex, length, 16);
-    assert(equals("I'm killing your brain like a poisonous mushroom", bytes, length));
+    ASSERT_EQ((const unsigned char*)"I'm killing your brain like a poisonous mushroom", (const unsigned char *)bytes);
 //    fwrite(bytes, 1, length, stdout);
 }
