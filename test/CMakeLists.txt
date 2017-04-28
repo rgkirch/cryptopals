@@ -5,9 +5,12 @@ set(GTEST_ROOT lib/googletest/googletest)
 
 project(cryptoTest)
 
+add_subdirectory(googletest)
+set(GTEST_ROOT googletest/googletest)
+
 include_directories(${GTEST_ROOT})
 include_directories(${GTEST_ROOT}/include)
-include_directories(../src)
+#include_directories(../src)
 
 add_executable(baseTest baseTest.cpp)
 target_link_libraries(baseTest gtest gtest_main base)

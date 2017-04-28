@@ -34,7 +34,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/richie/Documents/rgkirch/cryptopals/lib/googletest/cmake_install.cmake")
   include("/home/richie/Documents/rgkirch/cryptopals/src/cmake_install.cmake")
   include("/home/richie/Documents/rgkirch/cryptopals/test/cmake_install.cmake")
 
