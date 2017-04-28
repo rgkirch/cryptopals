@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/richie/Documents/rgkirch/cryptopals/src/base.h
+
+/home/richie/Documents/rgkirch/cryptopals/src/main.c
+stdio.h
+-
+base.h
+/home/richie/Documents/rgkirch/cryptopals/src/base.h
+

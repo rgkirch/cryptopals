@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.6)
+cmake_minimum_required(VERSION 3.3)
 
 project(cryptopals)
 set(cryptopals_version_major 0)
@@ -10,13 +10,11 @@ set(GTEST_ROOT lib/googletest/googletest)
 enable_testing()
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
-include_directories(test)
 include_directories(src)
-include_directories(${GTEST_ROOT})
-include_directories(${GTEST_ROOT}/include)
+include_directories(test)
 
-add_subdirectory(test)
-add_subdirectory(src)
 add_subdirectory(lib/googletest)
+add_subdirectory(src)
+add_subdirectory(test)
 
 #add_test(baseTest base)
