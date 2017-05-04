@@ -1,17 +1,28 @@
 #include "crypto.h"
-#include "gtest/gtest.h"
+#include <gtest/gtest.h>
 
-int equals(unsigned char* a, unsigned char* b, int len)
-{
-    for(int i = 0; i < len; i++)
-    {
-        if(a[i] != b[i])
-        {
-            return 0;
-        }
-    }
-    return 1;
+
+TEST(eh, he) {
+    ASSERT_EQ(5, five());
 }
+
+TEST(indexOf, indexOf) {
+    std::vector<unsigned char> alphabet = {'a','b','c','d','e','b','g'};
+    std::vector<std::pair<int, unsigned char>> cases = {std::make_pair(0, 'a')};
+    for (auto &&pair : cases) {
+        ASSERT_EQ(pair.first, indexOf(pair.second, alphabet.data(), alphabet.size()));
+    }
+    ASSERT_EQ(0, indexOf('a', alphabet.data(), alphabet.size()));
+    ASSERT_EQ(5, indexOf('b', alphabet.data(), alphabet.size()));
+    ASSERT_EQ(-1, indexOf('1', alphabet.data(), alphabet.size()));
+}
+
+TEST(one, two) {
+    unsigned char h = 'h';
+    unsigned char *p = &h;
+    ASSERT_EQ(1, equals(p, p, 1));
+}
+
 
 //TEST(simple_test, something) {
 //    unsigned char hex[] = {'4','1'};

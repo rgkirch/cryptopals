@@ -1,18 +1,31 @@
 #include <stddef.h>
+#include <crypto.h>
 //http://sircmpwn.github.io/2017/03/15/How-I-learned-to-stop-worrying-and-love-C.html
 
-int indexOf(unsigned char c, unsigned char* cs, int length)
+unsigned long indexOf(const unsigned char c, const unsigned char* cs, const int length)
 {
     if(length < 1) { return -1; }
     if(cs == NULL) { return -1; }
-    unsigned char* ptr = cs;
-    unsigned char* end = cs + length;
+    const unsigned char* ptr = cs;
+    const unsigned char* end = cs + length;
     while(ptr != end)
     {
         if(*ptr == c) return ptr - cs;
         ptr++;
     }
     return -1;
+}
+
+int equals(unsigned char* a, unsigned char* b, int len)
+{
+    for(int i = 0; i < len; i++)
+    {
+        if(a[i] != b[i])
+        {
+            return 0;
+        }
+    }
+    return 1;
 }
 
 ////convert hex to base 64
