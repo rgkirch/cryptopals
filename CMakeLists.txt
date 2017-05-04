@@ -6,11 +6,13 @@ set(cryptopals_version_minor 1)
 
 set(CMAKE_VERBOSE_MAKEFILE on )
 
-enable_testing()
+set(GTEST_ROOT googletest/googletest)
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+#enable_testing()
+
+#include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 include_directories(src)
-include_directories(test)
+#include_directories(test)
 
 add_subdirectory(src)
 add_subdirectory(test)

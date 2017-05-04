@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/baseTest.dir/baseTest.cpp.o"
+  "CMakeFiles/baseTest.dir/set_1_Basics.cpp.obj"
   "baseTest.pdb"
-  "baseTest"
+  "baseTest.exe"
+  "baseTest.exe.manifest"
+  "libbaseTest.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

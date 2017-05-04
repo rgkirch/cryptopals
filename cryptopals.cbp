@@ -5,574 +5,442 @@
 		<Option title="cryptopals"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\test\;CMake Files\test\googletest\;CMake Files\test\googletest\googlemock\;CMake Files\test\googletest\googletest\;CMake Files\test\googletest\googletest\cmake\;CMake Files\src\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\test\;CMake Files\test\googletest\;CMake Files\test\googletest\googlemock\;CMake Files\test\googletest\googletest\;CMake Files\test\googletest\googletest\cmake\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/richie/Documents/rgkirch/cryptopals"/>
+				<Option working_dir="G:/rgkirch/cryptopals"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="test">
-				<Option working_dir="/home/richie/Documents/rgkirch/cryptopals"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 test"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/richie/Documents/rgkirch/cryptopals"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/home/richie/Documents/rgkirch/cryptopals"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="list_install_components">
-				<Option working_dir="/home/richie/Documents/rgkirch/cryptopals"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 list_install_components"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="install">
-				<Option working_dir="/home/richie/Documents/rgkirch/cryptopals"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 install"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/local">
-				<Option working_dir="/home/richie/Documents/rgkirch/cryptopals"/>
+				<Option working_dir="G:/rgkirch/cryptopals"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 install/local"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="install/strip">
-				<Option working_dir="/home/richie/Documents/rgkirch/cryptopals"/>
+			<Target title="install">
+				<Option working_dir="G:/rgkirch/cryptopals"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 install/strip"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="main">
-				<Option output="/home/richie/Documents/rgkirch/cryptopals/src/main" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/richie/Documents/rgkirch/cryptopals/src"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/src"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/src/."/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
-				</Compiler>
+			<Target title="edit_cache">
+				<Option working_dir="G:/rgkirch/cryptopals"/>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/src/Makefile&quot;  VERBOSE=1 main"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="main/fast">
-				<Option output="/home/richie/Documents/rgkirch/cryptopals/src/main" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/richie/Documents/rgkirch/cryptopals/src"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/src"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/src/."/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
-				</Compiler>
+			<Target title="rebuild_cache">
+				<Option working_dir="G:/rgkirch/cryptopals"/>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/src/Makefile&quot;  VERBOSE=1 main/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="base">
-				<Option output="/home/richie/Documents/rgkirch/cryptopals/src/libbase.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/richie/Documents/rgkirch/cryptopals/src"/>
+			<Target title="list_install_components">
+				<Option working_dir="G:/rgkirch/cryptopals"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="crypto">
+				<Option output="G:/rgkirch/cryptopals/src/libcrypto.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="G:/rgkirch/cryptopals/src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/src"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/src/."/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="G:/rgkirch/cryptopals/src"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/src/Makefile&quot;  VERBOSE=1 base"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/src/Makefile&quot;  VERBOSE=1 crypto"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="base/fast">
-				<Option output="/home/richie/Documents/rgkirch/cryptopals/src/libbase.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/richie/Documents/rgkirch/cryptopals/src"/>
+			<Target title="crypto/fast">
+				<Option output="G:/rgkirch/cryptopals/src/libcrypto.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="G:/rgkirch/cryptopals/src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/src"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/src/."/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="G:/rgkirch/cryptopals/src"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/src/Makefile&quot;  VERBOSE=1 base/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/src/Makefile&quot;  VERBOSE=1 crypto/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="baseTest">
-				<Option output="/home/richie/Documents/rgkirch/cryptopals/test/baseTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/richie/Documents/rgkirch/cryptopals/test"/>
+			<Target title="basicsTest">
+				<Option output="G:/rgkirch/cryptopals/test/basicsTest.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="G:/rgkirch/cryptopals/test"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/src"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="G:/rgkirch/cryptopals/src"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googletest/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/Makefile&quot;  VERBOSE=1 baseTest"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/Makefile&quot;  VERBOSE=1 basicsTest"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="baseTest/fast">
-				<Option output="/home/richie/Documents/rgkirch/cryptopals/test/baseTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/richie/Documents/rgkirch/cryptopals/test"/>
+			<Target title="basicsTest/fast">
+				<Option output="G:/rgkirch/cryptopals/test/basicsTest.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="G:/rgkirch/cryptopals/test"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/src"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="G:/rgkirch/cryptopals/src"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googletest/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/Makefile&quot;  VERBOSE=1 baseTest/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/Makefile&quot;  VERBOSE=1 basicsTest/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock_main">
-				<Option output="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock"/>
+				<Option output="G:/rgkirch/cryptopals/test/googletest/googlemock/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="G:/rgkirch/cryptopals/test/googletest/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/src"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/include"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest/include"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="G:/rgkirch/cryptopals/src"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googlemock/include"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googlemock"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googletest/include"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googletest"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock_main/fast">
-				<Option output="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock"/>
+				<Option output="G:/rgkirch/cryptopals/test/googletest/googlemock/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="G:/rgkirch/cryptopals/test/googletest/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/src"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/include"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest/include"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="G:/rgkirch/cryptopals/src"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googlemock/include"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googlemock"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googletest/include"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googletest"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock">
-				<Option output="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/libgmock.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock"/>
+				<Option output="G:/rgkirch/cryptopals/test/googletest/googlemock/libgmock.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="G:/rgkirch/cryptopals/test/googletest/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/src"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/include"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest/include"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="G:/rgkirch/cryptopals/src"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googlemock/include"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googlemock"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googletest/include"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googletest"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock/fast">
-				<Option output="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/libgmock.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock"/>
+				<Option output="G:/rgkirch/cryptopals/test/googletest/googlemock/libgmock.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="G:/rgkirch/cryptopals/test/googletest/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/src"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/include"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest/include"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="G:/rgkirch/cryptopals/src"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googlemock/include"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googlemock"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googletest/include"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googletest"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gtest_main">
-				<Option output="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/gtest"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/src"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest/include"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gtest_main/fast">
-				<Option output="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/gtest"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/src"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest/include"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest">
-				<Option output="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/gtest"/>
+				<Option output="G:/rgkirch/cryptopals/test/googletest/googlemock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="G:/rgkirch/cryptopals/test/googletest/googlemock/gtest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/src"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest/include"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="G:/rgkirch/cryptopals/src"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googletest/include"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googletest"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest/fast">
-				<Option output="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/gtest"/>
+				<Option output="G:/rgkirch/cryptopals/test/googletest/googlemock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="G:/rgkirch/cryptopals/test/googletest/googlemock/gtest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/src"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest/include"/>
-					<Add directory="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="G:/rgkirch/cryptopals/src"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googletest/include"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googletest"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="G:/rgkirch/cryptopals/test/googletest/googlemock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="G:/rgkirch/cryptopals/test/googletest/googlemock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="G:/rgkirch/cryptopals/src"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googletest/include"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googletest"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="G:/rgkirch/cryptopals/test/googletest/googlemock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="G:/rgkirch/cryptopals/test/googletest/googlemock/gtest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="G:/rgkirch/cryptopals/src"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googletest/include"/>
+					<Add directory="G:/rgkirch/cryptopals/test/googletest/googletest"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;G:/rgkirch/cryptopals/test/googletest/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/src/base.c">
-			<Option target="base"/>
+		<Unit filename="G:/rgkirch/cryptopals/src/crypto.c">
+			<Option target="crypto"/>
 		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/src/base.h">
-			<Option target="base"/>
+		<Unit filename="G:/rgkirch/cryptopals/src/crypto.h">
+			<Option target="crypto"/>
 		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/src/main.c">
-			<Option target="main"/>
-		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/test/baseTest.cpp">
-			<Option target="baseTest"/>
-		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/src/gmock-all.cc">
+		<Unit filename="G:/rgkirch/cryptopals/test/googletest/googlemock/src/gmock-all.cc">
 			<Option target="gmock_main"/>
 			<Option target="gmock"/>
 		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/src/gmock_main.cc">
+		<Unit filename="G:/rgkirch/cryptopals/test/googletest/googlemock/src/gmock_main.cc">
 			<Option target="gmock_main"/>
 		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest/src/gtest-all.cc">
+		<Unit filename="G:/rgkirch/cryptopals/test/googletest/googletest/src/gtest-all.cc">
 			<Option target="gmock_main"/>
 			<Option target="gmock"/>
 			<Option target="gtest"/>
 		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest/src/gtest_main.cc">
+		<Unit filename="G:/rgkirch/cryptopals/test/googletest/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/CMakeLists.txt">
+		<Unit filename="G:/rgkirch/cryptopals/test/set_1_Basics.cpp">
+			<Option target="basicsTest"/>
+		</Unit>
+		<Unit filename="G:/rgkirch/cryptopals/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/test/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\test\"/>
-		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/test/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\test\"/>
-		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/test/googletest/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\test\googletest\"/>
-		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/test/googletest/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\test\googletest\"/>
-		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/test/googletest/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\test\googletest\"/>
-		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\test\googletest\googlemock\"/>
-		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\test\googletest\googlemock\"/>
-		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\test\googletest\googlemock\"/>
-		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googlemock/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\test\googletest\googlemock\"/>
-		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\test\googletest\googletest\"/>
-		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\test\googletest\googletest\"/>
-		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\test\googletest\googletest\"/>
-		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\test\googletest\googletest\"/>
-		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\test\googletest\googletest\"/>
-		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest/cmake/internal_utils.cmake">
-			<Option virtualFolder="CMake Files\test\googletest\googletest\cmake\"/>
-		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest/cmake/internal_utils.cmake">
-			<Option virtualFolder="CMake Files\test\googletest\googletest\cmake\"/>
-		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest/cmake/internal_utils.cmake">
-			<Option virtualFolder="CMake Files\test\googletest\googletest\cmake\"/>
-		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest/cmake/internal_utils.cmake">
-			<Option virtualFolder="CMake Files\test\googletest\googletest\cmake\"/>
-		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/test/googletest/googletest/cmake/internal_utils.cmake">
-			<Option virtualFolder="CMake Files\test\googletest\googletest\cmake\"/>
-		</Unit>
-		<Unit filename="/home/richie/Documents/rgkirch/cryptopals/src/CMakeLists.txt">
+		<Unit filename="G:/rgkirch/cryptopals/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="G:/rgkirch/cryptopals/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+		<Unit filename="G:/rgkirch/cryptopals/test/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\googletest\"/>
+		</Unit>
+		<Unit filename="G:/rgkirch/cryptopals/test/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\googletest\"/>
+		</Unit>
+		<Unit filename="G:/rgkirch/cryptopals/test/googletest/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\googletest\googlemock\"/>
+		</Unit>
+		<Unit filename="G:/rgkirch/cryptopals/test/googletest/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\googletest\googlemock\"/>
+		</Unit>
+		<Unit filename="G:/rgkirch/cryptopals/test/googletest/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\googletest\googlemock\"/>
+		</Unit>
+		<Unit filename="G:/rgkirch/cryptopals/test/googletest/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\googletest\googletest\"/>
+		</Unit>
+		<Unit filename="G:/rgkirch/cryptopals/test/googletest/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\googletest\googletest\"/>
+		</Unit>
+		<Unit filename="G:/rgkirch/cryptopals/test/googletest/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\googletest\googletest\"/>
+		</Unit>
+		<Unit filename="G:/rgkirch/cryptopals/test/googletest/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\googletest\googletest\"/>
+		</Unit>
+		<Unit filename="G:/rgkirch/cryptopals/test/googletest/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\test\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="G:/rgkirch/cryptopals/test/googletest/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\test\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="G:/rgkirch/cryptopals/test/googletest/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\test\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="G:/rgkirch/cryptopals/test/googletest/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\test\googletest\googletest\cmake\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

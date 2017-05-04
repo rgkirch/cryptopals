@@ -1,19 +1,11 @@
-cmake_minimum_required(VERSION 3.3)
+cmake_minimum_required(VERSION 3.7)
+project(cryptopals)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wall -std=c++11")
-set(GTEST_ROOT lib/googletest/googletest)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_VERBOSE_MAKEFILE on)
 
-project(cryptoTest)
-
-add_subdirectory(googletest)
 set(GTEST_ROOT googletest/googletest)
+add_subdirectory(googletest)
 
-include_directories(${GTEST_ROOT})
-include_directories(${GTEST_ROOT}/include)
-#include_directories(../src)
-
-add_executable(baseTest baseTest.cpp)
-target_link_libraries(baseTest gtest gtest_main base)
-
-#add_executable(baseTest baseTest.cpp)
-#add_library(baseTest baseTest.cpp)
+add_executable(basicsTest set_1_Basics.cpp)
+target_link_libraries(basicsTest gtest gtest_main crypto)

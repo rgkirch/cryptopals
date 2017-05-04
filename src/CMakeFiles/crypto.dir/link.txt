@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libcrypto.a  CMakeFiles/crypto.dir/crypto.c.obj
+C:\MinGW\bin\ranlib.exe libcrypto.a
