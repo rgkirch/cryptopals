@@ -60,7 +60,6 @@ a.out
 .idea
 /test/CMakeFiles/
 /src/CMakeFiles/
-!/src/CMakeFiles/
 /test/Makefile
 /test/cmake_install.cmake
 /test/cryptoTest.cpp
