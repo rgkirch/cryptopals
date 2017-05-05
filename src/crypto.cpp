@@ -1,9 +1,11 @@
 #include <stddef.h>
 #include <crypto.hpp>
+#include <string>
+
 //http://sircmpwn.github.io/2017/03/15/How-I-learned-to-stop-worrying-and-love-C.html
-
-int five() { return 5; }
-
+std::string hexToBase64(std::string hex) {
+    return hex;
+}
 unsigned long indexOf(const unsigned char c, const unsigned char* cs, const int length)
 {
     if(length < 1) { return -1; }
