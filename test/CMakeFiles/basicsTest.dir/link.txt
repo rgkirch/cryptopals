@@ -1,3 +1,0 @@
-"C:\Users\Richie\AppData\Roaming\JetBrains\CLion 2017.1.1\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\basicsTest.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\basicsTest.dir/objects.a @CMakeFiles\basicsTest.dir\objects1.rsp
-C:\MinGW\bin\g++.exe  -g   -Wl,--whole-archive CMakeFiles\basicsTest.dir/objects.a -Wl,--no-whole-archive  -o basicsTest.exe -Wl,--out-implib,libbasicsTest.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\basicsTest.dir\linklibs.rsp
