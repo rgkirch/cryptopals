@@ -1,6 +1,8 @@
 #include <stddef.h>
-#include <crypto.h>
+#include <crypto.hpp>
 //http://sircmpwn.github.io/2017/03/15/How-I-learned-to-stop-worrying-and-love-C.html
+
+int five() { return 5; }
 
 unsigned long indexOf(const unsigned char c, const unsigned char* cs, const int length)
 {
