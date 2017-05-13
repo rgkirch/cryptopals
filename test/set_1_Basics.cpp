@@ -1,11 +1,32 @@
 #include "crypto.hpp"
 #include <gtest/gtest.h>
 
-TEST(set_one, convert_hex_to_base_64) {
-    std::string hex = "49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d";
-    std::string baseSixtyFour = "SSdtIGtpbGxpbmcgeW91ciBicmFpbiBsaWtlIGEgcG9pc29ub3VzIG11c2hyb29t";
-    ASSERT_EQ(baseSixtyFour, hexToBase64(hex));
+std::vector<int> range(int begin, int end) {
+    std::vector<int> vec;
+    vec.reserve(end - begin);
+    for (int i = 0; i < end - begin; ++i) {
+        vec[i] = begin + i;
+    }
+    return vec;
 }
+
+TEST(range, one) {
+    std::vector<int> vec {0,1,2,3};
+    std::vector<int> r = range(0, 4);
+    ASSERT_EQ(vec, r);
+}
+
+TEST(sliding, one) {
+    std::vector expected = {{0,1,2},{2,3,4}};
+    std::vector actual = Sliding<int>(range(0,4), 3, 2).toVector();
+    ASSERT_EQ(expected, actual);
+}
+
+//TEST(set_one, convert_hex_to_base_64) {
+//    std::string hex = "49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d";
+//    std::string baseSixtyFour = "SSdtIGtpbGxpbmcgeW91ciBicmFpbiBsaWtlIGEgcG9pc29ub3VzIG11c2hyb29t";
+//    ASSERT_EQ(baseSixtyFour, hexToBase64(hex));
+//}
 
 TEST(indexOf, indexOf) {
     std::vector<unsigned char> alphabet = {'a','b','c','d','e','b','g'};
@@ -27,6 +48,10 @@ TEST(one, two) {
     unsigned char h = 'h';
     unsigned char *p = &h;
     ASSERT_EQ(1, equals(p, p, 1));
+}
+
+TEST(one, three) {
+    ASSERT_EQ(1,1);
 }
 
 

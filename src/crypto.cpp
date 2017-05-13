@@ -1,10 +1,18 @@
 #include <stddef.h>
 #include <crypto.hpp>
 #include <string>
+#include <sstream>
+#include <vector>
 
 //http://sircmpwn.github.io/2017/03/15/How-I-learned-to-stop-worrying-and-love-C.html
 std::string hexToBase64(std::string hex) {
-    return hex;
+    std::string str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+/";
+    for(int bit = 0; bit + 6 < str.length() * 8; bit += 6) {
+
+    }
+    std::stringstream out;
+    out << std::hex << hex;
+    return out.str();
 }
 unsigned long indexOf(const unsigned char c, const unsigned char* cs, const int length)
 {
