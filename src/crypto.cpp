@@ -1,39 +1,36 @@
 #include <stddef.h>
-#include <crypto.hpp>
 #include <string>
 #include <sstream>
 #include <vector>
+#include <cstring>
+#include <cmath>
 
 //http://sircmpwn.github.io/2017/03/15/How-I-learned-to-stop-worrying-and-love-C.html
 std::string hexToBase64(std::string hex) {
     std::string str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+/";
-    for(int bit = 0; bit + 6 < str.length() * 8; bit += 6) {
+    for (int bit = 0; bit + 6 < str.length() * 8; bit += 6) {
 
     }
     std::stringstream out;
     out << std::hex << hex;
     return out.str();
 }
-unsigned long indexOf(const unsigned char c, const unsigned char* cs, const int length)
-{
-    if(length < 1) { return -1; }
-    if(cs == NULL) { return -1; }
-    const unsigned char* ptr = cs;
-    const unsigned char* end = cs + length;
-    while(ptr != end)
-    {
-        if(*ptr == c) return ptr - cs;
+
+unsigned long indexOf(const unsigned char c, const unsigned char *cs, const int length) {
+    if (length < 1) { return -1; }
+    if (cs == NULL) { return -1; }
+    const unsigned char *ptr = cs;
+    const unsigned char *end = cs + length;
+    while (ptr != end) {
+        if (*ptr == c) return ptr - cs;
         ptr++;
     }
     return -1;
 }
 
-int equals(unsigned char* a, unsigned char* b, int len)
-{
-    for(int i = 0; i < len; i++)
-    {
-        if(a[i] != b[i])
-        {
+int equals(unsigned char *a, unsigned char *b, int len) {
+    for (int i = 0; i < len; i++) {
+        if (a[i] != b[i]) {
             return 0;
         }
     }
