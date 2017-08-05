@@ -4,6 +4,8 @@
 #include <cstring>
 #include <cmath>
 
+using namespace std;
+
 template<int T>
 long long int of(std::string);
 
@@ -20,14 +22,9 @@ int indexOf(const char arr[], char c) {
 template<>
 long long int of<16>(std::string s) {
     char arr[]{"0123456789abcdef"};
-    long long int number{0};
-    for (int i = 0; i < s.length() / 3; ++i) {
-        number = number +
-                 (
-                           indexOf(arr, s[i * 3 + 0]) * (int)pow(16, 2)
-                         + indexOf(arr, s[i * 3 + 1]) * (int)pow(16, 1)
-                         + indexOf(arr, s[i * 3 + 2]) * (int)pow(16, 0)
-                 ) * (int) pow(16, i);
+    long long int number = 0;
+    for (int i = 0; i < s.length(); ++i) {
+        number += indexOf(arr, s[i]) * (int) pow(16, s.length() - (i + 1));
     }
     return number;
 }
@@ -35,6 +32,11 @@ long long int of<16>(std::string s) {
 template<>
 std::string as<64>(long long int number) {
     char arr[]{"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"};
-
+    string result;
+    while (number > 0) {
+        result += arr[number % 64];
+        number /= 64;
+    }
+    return result;
 }
 

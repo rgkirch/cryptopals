@@ -1,26 +1,34 @@
 #include "crypto.hpp"
 #include <gtest/gtest.h>
+#include <base.hpp>
 
-std::vector<int> range(int begin, int end) {
-    std::vector<int> vec;
-    vec.reserve(end - begin);
-    for (int i = 0; i < end - begin; ++i) {
-        vec[i] = begin + i;
-    }
-    return vec;
+TEST(hex, toBase64) {
+    string input = "49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d";
+    string expected = "SSdtIGtpbGxpbmcgeW91ciBicmFpbiBsaWtlIGEgcG9pc29ub3VzIG11c2hyb29t";
+    auto output = as<64>(of<16>(input));
+    ASSERT_EQ(expected, output);
 }
 
-TEST(range, one) {
-    std::vector<int> vec {0,1,2,3};
-    std::vector<int> r = range(0, 4);
-    ASSERT_EQ(vec, r);
-}
+//std::vector<int> range(int begin, int end) {
+//    std::vector<int> vec;
+//    vec.reserve(end - begin);
+//    for (int i = 0; i < end - begin; ++i) {
+//        vec[i] = begin + i;
+//    }
+//    return vec;
+//}
 
-TEST(sliding, one) {
-    std::vector expected = {{0,1,2},{2,3,4}};
-    std::vector actual = Sliding<int>(range(0,4), 3, 2).toVector();
-    ASSERT_EQ(expected, actual);
-}
+//TEST(range, one) {
+//    std::vector<int> vec {0,1,2,3};
+//    std::vector<int> r = range(0, 4);
+//    ASSERT_EQ(vec, r);
+//}
+
+//TEST(sliding, one) {
+//    std::vector expected = {{0,1,2},{2,3,4}};
+//    std::vector actual = Sliding<int>(range(0,4), 3, 2).toVector();
+//    ASSERT_EQ(expected, actual);
+//}
 
 //TEST(set_one, convert_hex_to_base_64) {
 //    std::string hex = "49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d";
@@ -28,32 +36,32 @@ TEST(sliding, one) {
 //    ASSERT_EQ(baseSixtyFour, hexToBase64(hex));
 //}
 
-TEST(indexOf, indexOf) {
-    std::vector<unsigned char> alphabet = {'a','b','c','d','e','b','g'};
-    std::vector<std::pair<int, unsigned char>> cases = {
-            std::make_pair(0, 'a'),
-            std::make_pair(1, 'b'),
-            std::make_pair(-1, 'L'),
-    };
-    for (auto &&pair : cases) {
-        ASSERT_EQ(pair.first, indexOf(pair.second, alphabet.data(), alphabet.size()));
-    }
-    ASSERT_EQ(-1, indexOf('\0', alphabet.data(), alphabet.size()));
-    ASSERT_EQ(-1, indexOf('a', NULL, alphabet.size()));
-    ASSERT_EQ(-1, indexOf('a', alphabet.data(), '\0'));
-    ASSERT_EQ(-1, indexOf('a', alphabet.data(), -1));
-}
+//TEST(indexOf, indexOf) {
+//    std::vector<unsigned char> alphabet = {'a','b','c','d','e','b','g'};
+//    std::vector<std::pair<int, unsigned char>> cases = {
+//            std::make_pair(0, 'a'),
+//            std::make_pair(1, 'b'),
+//            std::make_pair(-1, 'L'),
+//    };
+//    for (auto &&pair : cases) {
+//        ASSERT_EQ(pair.first, indexOf(pair.second, alphabet.data(), alphabet.size()));
+//    }
+//    ASSERT_EQ(-1, indexOf('\0', alphabet.data(), alphabet.size()));
+//    ASSERT_EQ(-1, indexOf('a', NULL, alphabet.size()));
+//    ASSERT_EQ(-1, indexOf('a', alphabet.data(), '\0'));
+//    ASSERT_EQ(-1, indexOf('a', alphabet.data(), -1));
+//}
 
-TEST(one, two) {
-    unsigned char h = 'h';
-    unsigned char *p = &h;
-    ASSERT_EQ(1, equals(p, p, 1));
-}
+//TEST(one, two) {
+//    unsigned char h = 'h';
+//    unsigned char *p = &h;
+//    ASSERT_EQ(1, equals(p, p, 1));
+//}
 
-TEST(one, three) {
-    ASSERT_EQ(1,1);
-}
-
+//TEST(one, three) {
+//    ASSERT_EQ(1,1);
+//}
+//
 
 //TEST(simple_test, something) {
 //    unsigned char hex[] = {'4','1'};

@@ -12,5 +12,6 @@ TEST(indexof, indexof) {
 }
 
 TEST(base, test) {
-    of<16>("abc");
+    auto result = of<16>("123");
+    ASSERT_EQ(result, 291);
 }
