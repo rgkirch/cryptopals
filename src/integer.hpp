@@ -1,14 +1,14 @@
 #pragma once
 
-#include <vector>
-#include <algorithm>
+//#include <vector>
+//#include <algorithm>
+#include <type_traits>
 
 using namespace std;
 
 template<typename T>
-//typename std::enable_if<std::is_unsigned<T>::value, bool>::type
-std::enable_if_t<std::is_unsigned<T>::value, bool>
 class Integer {
+    static_assert(std::is_unsigned<T>::value, "must be unsigned type");
 public:
     void increment() {
         increment(0);

@@ -1,5 +1,6 @@
 #include "gtest/gtest.h"
 #include "integer.hpp"
+#include <cmath>
 
 TEST(integer, one) {
     Integer<unsigned int> integer;
@@ -27,13 +28,14 @@ TEST(integer, three) {
 }
 
 TEST(integer, four) {
-    Integer<unsigned short> integer;
+//    static_assert(sizeof(char) == 1, "char must be one byte for test to apply");
+    int iterations = (int) pow(2.0, sizeof(char) * 8) - 1;
+    Integer<unsigned char> integer;
     integer.increment();
     int inc{0};
     while (integer.data.size() == 1) {
         integer.increment();
         ++inc;
     }
-    cout << integer.data.size() << endl;
-    ASSERT_EQ(4000, inc);
+    ASSERT_EQ(iterations, inc);
 }
