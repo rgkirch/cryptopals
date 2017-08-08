@@ -1,42 +1,30 @@
 #pragma once
 
 #include <string>
-#include <cstring>
-#include <cmath>
+#include <gmpxx.h>
 
 using namespace std;
 
-template<int T>
-long long int of(std::string);
-
-template<int T>
-std::string as(long long int number);
-
-int indexOf(const char arr[], char c) {
-    for (int i = 0; i < strlen(arr); ++i) {
-        if (arr[i] == c) return i;
-    }
-    return -1;
+template<int base>
+auto of(std::string s) {
+    return mpz_class(s, base);
 }
 
-template<>
-long long int of<16>(std::string s) {
-    char arr[]{"0123456789abcdef"};
-    long long int number = 0;
-    for (int i = 0; i < s.length(); ++i) {
-        number += indexOf(arr, s[i]) * (int) pow(16, s.length() - (i + 1));
-    }
-    return number;
+template<int base>
+string as(mpz_class number) {
+    static_assert(base >= 2 && base <= 62, "mpz doesn't support bases outside the range of [2, 62]");
+    return number.get_str(base);
 }
-
 template<>
-std::string as<64>(long long int number) {
+std::string as<64>(mpz_class number) {
     char arr[]{"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"};
     string result;
+//    cout << endl << number.get_str(10) << endl;
     while (number > 0) {
-        result += arr[number % 64];
+        mpz_class temp = number % 64;
+        result += arr[temp.get_ui()];
         number /= 64;
     }
-    return result;
+    return {rbegin(result), rend(result)};
 }
 

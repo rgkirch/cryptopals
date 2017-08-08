@@ -5,7 +5,7 @@
 TEST(hex, toBase64) {
     string input = "49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d";
     string expected = "SSdtIGtpbGxpbmcgeW91ciBicmFpbiBsaWtlIGEgcG9pc29ub3VzIG11c2hyb29t";
-    auto output = as<64>(of<16>(input));
+    string output = as<64>(of<16>(input));
     ASSERT_EQ(expected, output);
 }
 
