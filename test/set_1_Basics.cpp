@@ -1,12 +1,54 @@
 #include "crypto.hpp"
 #include <gtest/gtest.h>
 #include <base.hpp>
+#include <functional>
+
+using namespace std;
 
 TEST(hex, toBase64) {
     string input = "49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d";
     string expected = "SSdtIGtpbGxpbmcgeW91ciBicmFpbiBsaWtlIGEgcG9pc29ub3VzIG11c2hyb29t";
     string output = as<64>(of<16>(input));
     ASSERT_EQ(expected, output);
+}
+
+//int sum(int,int)
+//function<function<int(int)>(int)> increment = curry(sum)(1)
+//int three = increment(2)
+//template <typename A, typename B, typename C>
+//auto curry(function<C(A,B)> f) {
+//    return [](A a) {
+//        return []() {};
+//    };
+//}
+
+//template <typename Callable, typename Collection>
+//function<function<Collection(Collection)>(Collection)> zipWith(Callable callable) {
+//    return bind(callable, placeholders::_1, placeholders::_2);
+////    return ([](char a, char b){ return a ^ b; })(input)(against);
+//};
+
+// established invarient is that a and b are the same length
+template<typename F>
+auto transform(string a, string b, F f) -> string {
+    string c;
+    c.resize(a.size());
+    transform(begin(a), end(a), begin(b), begin(c), f);
+    return c;
+}
+
+TEST(hex, xorr) {
+//    Fixed XOR
+//    Write a function that takes two equal-length buffers and produces their XOR combination.
+//            If your function works properly, then when you feed it the string:
+    string input = "1c0111001f010100061a024b53535009181c";
+//    ... after hex decoding, and when XOR'd against:
+    string against = "686974207468652062756c6c277320657965";
+//    ... should produce:
+    string expected = "746865206b696420646f6e277420706c6179";
+    string actual = transform(as<256>(of<16>(input)), as<256>(of<16>(against)), [](char a, char b) { return a ^ b; });
+//    string actual = zipWith([](char a, char b){ return a ^ b; })(input)(against);
+    ASSERT_EQ(expected, as<16>(of<256>(actual)));
 }
 
 //std::vector<int> range(int begin, int end) {
