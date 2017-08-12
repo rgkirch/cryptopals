@@ -6,16 +6,32 @@
 
 using namespace std;
 
+// cant make negative 0 unrepresentable so the code should just handle negative and positive 0
+//https://www.youtube.com/watch?v=ojZbFIQSdl8&feature=youtu.be&t=907
 template<typename T>
 class Integer {
     static_assert(std::is_unsigned<T>::value, "must be unsigned type");
 public:
     void increment() {
-        increment(0);
+        if(isZero()) {
+            positive = true;
+        }
+        if(positive) {
+            away_from_zero(0);
+        } else {
+            toward_zero(0);
+        }
     }
 
     void decrement() {
-        decrement(0);
+        if(isZero()) {
+            positive = false;
+        }
+        if(positive) {
+            toward_zero(0);
+        } else {
+            away_from_zero(0);
+        }
     }
 
     bool isZero() {
@@ -25,20 +41,20 @@ public:
     template<int base>
     string as() {
         string str;
-
     }
 
     bool positive{true};
     vector<T> data;
 private:
-    void increment(int index) {
+
+    void away_from_zero(int index) {
         if (index == data.size()) data.push_back(0);
-        if (0 == ++data[index]) increment(index + 1);
+        if (0 == ++data[index]) away_from_zero(index + 1);
     }
 
-    void decrement(int index) {
+    void toward_zero(int index) {
         if (index == data.size() - 1 && data.back() == 0) data.pop_back();
         if (index == data.size()) data.push_back(0);
-        if (0 == data[index]--) decrement(index + 1);
+        if (0 == data[index]--) toward_zero(index + 1);
     }
 };

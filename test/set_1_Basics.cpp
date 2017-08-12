@@ -1,15 +1,21 @@
 #include "crypto.hpp"
 #include <gtest/gtest.h>
 #include <base.hpp>
-#include <functional>
+#include <challenge03.h>
 
 using namespace std;
 
-TEST(hex, toBase64) {
+string hexToBase64(string a) {
+    return as<64>(of<16>(a));
+}
+
+TEST(set01, challenge01) {
+//    The string:
     string input = "49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d";
+//    Should produce:
     string expected = "SSdtIGtpbGxpbmcgeW91ciBicmFpbiBsaWtlIGEgcG9pc29ub3VzIG11c2hyb29t";
-    string output = as<64>(of<16>(input));
-    ASSERT_EQ(expected, output);
+//    So go ahead and make that happen. You'll need to use this code for the rest of the exercises.
+    ASSERT_EQ(expected, hexToBase64(input));
 }
 
 //int sum(int,int)
@@ -37,7 +43,11 @@ auto transform(string a, string b, F f) -> string {
     return c;
 }
 
-TEST(hex, xorr) {
+string fixed_xor(string a, string b) {
+    return as<16>(of<256>(transform(as<256>(of<16>(a)), as<256>(of<16>(b)), [](char aa, char bb) { return aa ^ bb; })));
+}
+
+TEST(set01, challenge02) {
 //    Fixed XOR
 //    Write a function that takes two equal-length buffers and produces their XOR combination.
 //            If your function works properly, then when you feed it the string:
@@ -46,9 +56,20 @@ TEST(hex, xorr) {
     string against = "686974207468652062756c6c277320657965";
 //    ... should produce:
     string expected = "746865206b696420646f6e277420706c6179";
-    string actual = transform(as<256>(of<16>(input)), as<256>(of<16>(against)), [](char a, char b) { return a ^ b; });
 //    string actual = zipWith([](char a, char b){ return a ^ b; })(input)(against);
-    ASSERT_EQ(expected, as<16>(of<256>(actual)));
+    ASSERT_EQ(expected, fixed_xor(input, against));
+}
+
+TEST(set01, challenge03) {
+//    The hex encoded string:
+    string encoded = "1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736";
+    auto letter_frequencies = get_letter_frequencies("/home/richie/Documents/rgkirch/cryptopals/resources/alice.txt");
+    for (auto f : letter_frequencies) {
+        cout << f << endl;
+    }
+//    ... has been XOR'd against a single character. Find the key, decrypt the message.
+//    You can do this by hand. But don't: write code to do it for you.
+//    How? Devise some method for "scoring" a piece of English plaintext. Character frequency is a good metric. Evaluate each output and choose the one with the best score.
 }
 
 //std::vector<int> range(int begin, int end) {

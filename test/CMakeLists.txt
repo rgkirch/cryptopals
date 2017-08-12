@@ -6,7 +6,7 @@ add_executable(baseTest baseTest.cpp)
 target_link_libraries(baseTest gtest gtest_main gmp)
 
 add_executable(set_1_Basics set_1_Basics.cpp)
-target_link_libraries(set_1_Basics gtest gtest_main gmp)
+target_link_libraries(set_1_Basics gtest gtest_main gmp boost_system boost_filesystem)
 
 add_executable(integerTest integerTest.cpp)
 target_link_libraries(integerTest gtest gtest_main)
